@@ -4,7 +4,8 @@
     "customizations": {
         "vscode": {
             "extensions": [
-                "StarkWare.cairo1"
+                "StarkWare.cairo1",
+                "tamasfe.even-better-toml"
             ]
         }
     }
