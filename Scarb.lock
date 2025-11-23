@@ -2,5 +2,14 @@
 version = 1
 
 [[package]]
+name = "alexandria_math"
+version = "0.7.0"
+source = "registry+https://scarbs.xyz/"
+checksum = "sha256:2f634a878ad20377041649f0c63ffff8d7f01fe578e3666371dfb15d243b6822"
+
+[[package]]
 name = "cairo_practica"
 version = "0.1.0"
+dependencies = [
+ "alexandria_math",
+]
