@@ -37,4 +37,20 @@ mod tests {
         let max_u256: u256 = 115792089237316195423570985008687907853269984665640564039457584007913129639935;    
         max_u256 * 100;
     }
+
+    #[test]
+    fn test_short_string() {
+        // - 31 characters max
+        // - Only ASCII supported
+        let short_string: felt252 = 'a';
+        assert!(short_string == 97);
+    }
+
+    #[test]
+    fn test_byte_array() {
+        // - No limit in size
+        // - Only ASCII supported
+        let byte_array: ByteArray = "No limit in size but still only ASCII supported";
+        assert!(byte_array.len() == 47);
+    }
 }
